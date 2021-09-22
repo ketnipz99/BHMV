@@ -1,5 +1,5 @@
 # BHMV
-Blockchain-based Healthcare Management System with Two-side Verifiability (BHMV) is a project that I have been working on for the past year as my final year project. BHMV sets to provide a safe and efficient scheme for sharing the electronic health records safely across different networks regardless of the cloud service provider. 
+Blockchain-based Healthcare Management System with Two-side Verifiability (BHMV) is a project that I have been working on for the past year as my final year project. BHMV sets to provide a safe and efficient scheme for sharing the electronic health records safely across different networks and platforms regardless of the cloud service provider. 
 
 1.  Download and install Node.js (https://nodejs.org/en/download/). 
 2.  Download and install Ganache from Truffle Suite (https://www.trufflesuite.com/docs/ganache/quickstart).
