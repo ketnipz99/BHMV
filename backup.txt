@@ -1,0 +1,48 @@
+import cryptographicMod from './EncDecMod'
+const keyword_extractor = require("keyword-extractor");
+
+var bitmapIndex = [];
+var keyword = [];
+var n = 1;
+var m = 0;
+bitmapIndex[0] = [];
+
+var indexMethods = {
+
+    keywordExtractor: function(abFile, columnHash) {
+        
+        //bitmapIndex[0] = [];
+        for (let k)
+        bitmapIndex[0][n] = columnHash;
+
+        //var abToStr = String.fromCharCode.apply(null, new Uint16Array(abFile))
+
+        var abToStr = new TextDecoder().decode(abFile);
+
+        keyword =
+            keyword_extractor.extract(abToStr,{
+                language: "english",
+                remove_digits: true,
+                remove_duplicates: true,
+                return_changed_case: true,
+                return_chained_words: false
+            })
+
+        for (let i = 0; i < keyword.length; i++) {
+
+            var encKeyword = cryptographicMod.keywordEncryption(keyword[i]);
+            //bitmapIndex[i+1] = [];
+            for (let j = m; j < bitmapIndex[0].length;j++)
+                
+                if (encKeyword == bitmapIndex)
+            bitmapIndex[i+1][0] = encKeyword;
+            bitmapIndex[i+1][n] = 1;
+        }
+
+        console.log(bitmapIndex)
+        n += 1;
+        return bitmapIndex;
+    }
+}
+
+export default indexMethods;
